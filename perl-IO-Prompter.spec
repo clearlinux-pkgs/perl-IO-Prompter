@@ -4,12 +4,13 @@
 #
 Name     : perl-IO-Prompter
 Version  : 0.004015
-Release  : 1
+Release  : 2
 URL      : https://cpan.metacpan.org/authors/id/D/DC/DCONWAY/IO-Prompter-0.004015.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DC/DCONWAY/IO-Prompter-0.004015.tar.gz
 Summary  : 'Prompt for input, read it, clean it, return it.'
 Group    : Development/Tools
 License  : Artistic-1.0-Perl
+Requires: perl-IO-Prompter-perl = %{version}-%{release}
 BuildRequires : buildreq-cpan
 BuildRequires : perl(Contextual::Return)
 BuildRequires : perl(Want)
@@ -29,8 +30,18 @@ Requires: perl-IO-Prompter = %{version}-%{release}
 dev components for the perl-IO-Prompter package.
 
 
+%package perl
+Summary: perl components for the perl-IO-Prompter package.
+Group: Default
+Requires: perl-IO-Prompter = %{version}-%{release}
+
+%description perl
+perl components for the perl-IO-Prompter package.
+
+
 %prep
 %setup -q -n IO-Prompter-0.004015
+cd %{_builddir}/IO-Prompter-0.004015
 
 %build
 export http_proxy=http://127.0.0.1:9/
@@ -66,8 +77,11 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.2/IO/Prompter.pm
 
 %files dev
 %defattr(-,root,root,-)
 /usr/share/man/man3/IO::Prompter.3
+
+%files perl
+%defattr(-,root,root,-)
+/usr/lib/perl5/vendor_perl/5.30.1/IO/Prompter.pm
