@@ -4,7 +4,7 @@
 #
 Name     : perl-IO-Prompter
 Version  : 0.004015
-Release  : 4
+Release  : 5
 URL      : https://cpan.metacpan.org/authors/id/D/DC/DCONWAY/IO-Prompter-0.004015.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DC/DCONWAY/IO-Prompter-0.004015.tar.gz
 Summary  : 'Prompt for input, read it, clean it, return it.'
@@ -84,4 +84,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.3/IO/Prompter.pm
+/usr/lib/perl5/vendor_perl/5.32.1/IO/Prompter.pm
