@@ -205,3 +205,9 @@ Revision history for IO-Prompter
     * Improved error messages (some now indicate what the wrong argument was)
 
     * Removed all uses of given/when and smartmatching for compatibility with Perl 5.38+
+
+
+0.005001  Mon Jul 17 06:54:17 2023
+
+    * Removed all uses of continue;
+      (Thanks, Alexander!)
