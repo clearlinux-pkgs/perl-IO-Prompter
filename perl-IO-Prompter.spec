@@ -7,7 +7,7 @@
 #
 Name     : perl-IO-Prompter
 Version  : 0.005001
-Release  : 22
+Release  : 23
 URL      : https://cpan.metacpan.org/authors/id/D/DC/DCONWAY/IO-Prompter-0.005001.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DC/DCONWAY/IO-Prompter-0.005001.tar.gz
 Summary  : 'Prompt for input, read it, clean it, return it.'
