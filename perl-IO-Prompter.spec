@@ -6,10 +6,10 @@
 # autospec commit: 94c6be0
 #
 Name     : perl-IO-Prompter
-Version  : 0.005001
-Release  : 24
-URL      : https://cpan.metacpan.org/authors/id/D/DC/DCONWAY/IO-Prompter-0.005001.tar.gz
-Source0  : https://cpan.metacpan.org/authors/id/D/DC/DCONWAY/IO-Prompter-0.005001.tar.gz
+Version  : 0.005002
+Release  : 25
+URL      : https://cpan.metacpan.org/authors/id/D/DC/DCONWAY/IO-Prompter-0.005002.tar.gz
+Source0  : https://cpan.metacpan.org/authors/id/D/DC/DCONWAY/IO-Prompter-0.005002.tar.gz
 Summary  : 'Prompt for input, read it, clean it, return it.'
 Group    : Development/Tools
 License  : Artistic-1.0-Perl
@@ -26,7 +26,7 @@ BuildRequires : perl(match::smart)
 %define debug_package %{nil}
 
 %description
-IO::Prompter version 0.005001
+IO::Prompter version 0.005002
 Prompt for, read, vet, chomp, and encapsulate input.
 Like so:
 
@@ -50,10 +50,10 @@ perl components for the perl-IO-Prompter package.
 
 
 %prep
-%setup -q -n IO-Prompter-0.005001
-cd %{_builddir}/IO-Prompter-0.005001
+%setup -q -n IO-Prompter-0.005002
+cd %{_builddir}/IO-Prompter-0.005002
 pushd ..
-cp -a IO-Prompter-0.005001 buildavx2
+cp -a IO-Prompter-0.005002 buildavx2
 popd
 
 %build
